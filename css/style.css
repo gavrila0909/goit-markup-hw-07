@@ -33,7 +33,7 @@
 }
 
 
-/* Studio box part */
+/* Studio flex-box */
 
 .header-style{
     display: flex;
@@ -172,7 +172,7 @@
     padding: 27px 0px;
     margin: 0px;
 }
-/* Feature overlay img*/
+
 
 
 
@@ -230,8 +230,6 @@
 
 
 
-
-
 .regular-customers-container{
     padding: 94px 0px;
 }
@@ -259,11 +257,7 @@
 .regular-customers-section a:hover{
     border: 1px solid #2196F3;
     fill: #2196F3;
-    
 }
-
-
-
 
 
 
@@ -324,13 +318,10 @@
     fill: var(--white-color);
     background-color: #FFFFFF1A;
     border-radius: 50%;
-
 }
 .footer-svg a:hover{
 background-color: #2196F3;
 }
-
-
 .footer-section3{
     display: flex;
     flex-direction: column;
@@ -396,99 +387,11 @@ background-color: #188CE8;
 }
 
 
-
-    
-
-
-/* Portofolio margin/padding section*/
-
-.main-style{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.portofolio-section{
-     flex-direction: column;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-}
-
-.portofolio-buttons{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    column-gap: 8px;
-    margin: 0px 0px 0px 0px;
-    padding: 0px;
-    transition: color var(--transition), background-color var(--transition), border var(--transition) ;
-}
-
-.portofolio-img-section {
-    padding-top: 50px;
-    justify-content: center;
-}
-.our-portofolio-style{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   gap: 30px;
-   padding: 0px;
-   list-style: none;
-}
-
-
-
-
-
-.our-portofolio-style li:hover{
-    cursor: pointer;
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-
-}
-.our-portofolio-style li img{
-  max-width: 100%;
-  height: auto; 
-  display: block;
-}
-
-
-.text-images{
-    background-color: var(--white-color);
-    border-top: none;
-    border: 2px solid #EEE;
-    text-decoration: none;
-    margin-top: -5px;
-    padding: 20px 24px;
-}
-.text-images p{
-    margin: 4px 0px 0px 0px;
-    text-decoration: none;
-} 
-
-.text-images span{
-    text-decoration: none;
-}
-.text-images span:hover {
-    text-decoration: none;
-}
-
-
-
-
-
-
-
-
-/* Studio and Portofolio styles section*/
+/* Studio style */
 
 .footer-studio-style{
     color:var(--white-color);
 }
-
-
 
 .logo-style, .footer-logo-style { 
     color:var(--header-logo-studio-color); 
@@ -522,8 +425,6 @@ background-color: #188CE8;
     border-bottom: 4px solid var(--main-activ-text-color);
     border-radius: 2px;
 }
-
-
 
 .header-contacts ul, .mail, .phone-number {
     color:var(--p-and-header-contact-color); 
@@ -629,9 +530,6 @@ h2{
 }
 
 
-
-
-
 .staf-style h4{
     color:var(--main-text-color);
     line-height: normal;
@@ -640,7 +538,6 @@ h2{
     font-weight: 500;
     letter-spacing: 0.48px;
     margin: 0px;
-
 }
 
 
@@ -653,7 +550,6 @@ h2{
     letter-spacing: 0.48px;
     margin-top: 10px;
     margin-bottom: 16px;
-    
 }
 
 .street-style{
@@ -695,8 +591,111 @@ h2{
     line-height:2.57;
 }
 
+/* Portofolio style and flex-bofx section*/
 
-/* Modal page style */
+.main-style{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.portofolio-section{
+     flex-direction: column;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.portofolio-buttons{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    transition: color var(--transition), background-color var(--transition), border var(--transition) ;
+}
+
+.portofolio-img-section {
+    padding-top: 50px;
+    justify-content: center;
+}
+.our-portofolio-style{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 30px;
+   padding: 0px;
+   list-style: none;
+}
+.our-portofolio-style li:hover{
+    cursor: pointer;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.our-portofolio-style li img{
+  max-width: 100%;
+  height: auto; 
+  display: block;
+}
+.text-images{
+    background-color: var(--white-color);
+    border-top: none;
+    border: 2px solid #EEE;
+    text-decoration: none;
+    margin-top: -5px;
+    padding: 20px 24px;
+}
+.text-images p{
+    margin: 4px 0px 0px 0px;
+    text-decoration: none;
+} 
+
+.text-images span{
+    text-decoration: none;
+}
+.text-images span:hover {
+    text-decoration: none;
+}
+
+/* Portofolio overlay text */
+
+.overlay-container{
+    position: relative;
+    overflow: hidden;
+    
+}
+.project-text-overlay{
+    position: absolute;
+    background-color: rgba(33, 150, 243, 0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translatey(100%);
+    transition: 250ms ease-in-out; 
+}
+
+.project-text-overlay .hiden-text{
+    font-family: var(--main-text-style) ;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+    padding:63px 24px 93px 24px;
+    margin: 0px;
+}
+
+.overlay-container:hover .project-text-overlay{
+    transform: translatey(0%);
+}
+
+
+
+
+
+/* Modal page style and flex-box */
 
 
 .modal{
@@ -748,7 +747,9 @@ h2{
   opacity: 0%;
   pointer-events:auto;
 }
- /* Contact form style */
+
+
+ /* Form style */
 
  
  .modal-content h2{
@@ -904,37 +905,8 @@ input:focus, textarea:focus, input:hover, textarea:hover{
 
 
 
-/* Portofolio overlay text */
 
-.overlay-container{
-    position: relative;
-    overflow: hidden;
-    
-}
-.project-text-overlay{
-    position: absolute;
-    background-color: rgba(33, 150, 243, 0.9);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translatey(100%);
-    transition: 250ms ease-in-out; 
-}
 
-.project-text-overlay .hiden-text{
-    font-family: var(--main-text-style) ;
-    color: #FFF;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.54px;
-    padding:63px 24px 93px 24px;
-    margin: 0px;
-}
 
-.overlay-container:hover .project-text-overlay{
-    transform: translatey(0%);
-}
 
 
