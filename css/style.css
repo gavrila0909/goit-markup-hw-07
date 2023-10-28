@@ -81,11 +81,11 @@
 .h1-title{
     color:var(--white-color);
     text-align: center;
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900; 
-    letter-spacing: 2.64px;
     text-transform: uppercase;  
-    line-height:60px;
+    line-height:42px;
+    letter-spacing: 1.56px;
     margin: 0px;
 }
 .main-button{
@@ -373,8 +373,6 @@ h2{
   }
 }
 
-
-
     /* What we do*/
 .feature-h2{
         display: none;
@@ -576,7 +574,6 @@ h2{
     align-items: center;
     justify-content: center;
 }
-
 .footer-svg a{
     padding: 12px 12px;
     align-items: center;
@@ -642,14 +639,10 @@ background-color: #188CE8;
 }
 
 
-
-}
-
 /* Portofolio style and flex-bofx section*/
 
 .main-style{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 60px 3vw;
 }
 
 .portofolio-section{
@@ -662,10 +655,10 @@ background-color: #188CE8;
 .portofolio-buttons{
     list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    column-gap: 8px;
+    gap: 8px;
     margin: 0px 0px 0px 0px;
     padding: 0px;
     transition: color var(--transition), background-color var(--transition), border var(--transition) ;
@@ -682,6 +675,7 @@ background-color: #188CE8;
    gap: 30px;
    padding: 0px;
    list-style: none;
+   margin: 0px;
 }
 .our-portofolio-style li:hover{
     cursor: pointer;
@@ -766,11 +760,11 @@ background-color: #188CE8;
     align-items: center; 
     overflow: auto;
 }
- .modal-content{
+.modal-content{
     position: relative;
     background-color: #FFFFFF;
-    width:40%;
-    height:90%;
+    width:94%;
+    height:80%;
     padding:40px;
     animation-name: OpenModal;
     animation-duration: 1s;
@@ -805,9 +799,7 @@ background-color: #188CE8;
 
 
  /* Form style */
-
- 
- .modal-content h2{
+.modal-content h2{
     color: #212121;
     text-align: center;
     font-family: Roboto;
@@ -865,15 +857,12 @@ input, textarea{
     line-height: normal;
     letter-spacing: 0.12px;
 }
-
-
 input:focus, textarea:focus, input:hover, textarea:hover{
     border: 1px solid var(--main-activ-text-color);
 }
  input:focus + svg{
     fill: var(--main-activ-text-color);
 }
-
 
 .terms-and-conditions-container {
     position: relative;
@@ -904,14 +893,11 @@ input:focus, textarea:focus, input:hover, textarea:hover{
     letter-spacing: 0.42px;
     text-decoration-line: underline;
 }
-
 .terms-and-conditions-labe{
     fill: #212121;
     width: 13px;
     height: 13px;
 }
-
-
 .terms-and-conditions-check{
     appearance: none;
     width: 16px;
@@ -929,11 +915,10 @@ input:focus, textarea:focus, input:hover, textarea:hover{
 .terms-and-conditions-check:not(:checked){
     visibility: hidden;
 }
-  .terms-and-conditions-check:checked + label > .icon-uncheckedbox {
+.terms-and-conditions-check:checked + label > .icon-uncheckedbox {
     display: none;
 }
-
-  .terms-and-conditions-label .icon-checkedbox:not(:checked){
+.terms-and-conditions-label .icon-checkedbox:not(:checked){
     position: absolute;
     width: 16px;
     height: 15px;
@@ -972,9 +957,7 @@ input:focus, textarea:focus, input:hover, textarea:hover{
     background: #188CE8;
 }
 
-
-
-
+}
 
 /*  Tablet */
 @media screen and (min-width: 768px){
@@ -987,7 +970,6 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         width: 100%;
         padding: 0px 2vw;
     }
-    
     .header-style .logo-section{
         margin: 25px 0px;
      }
@@ -1028,6 +1010,7 @@ input:focus, textarea:focus, input:hover, textarea:hover{
      .header-div-container .nav-menu-button{
         display: none;
      }
+
     /*Background*/
      .title-section-style{
         background-image: url("../images/background-img-t-1x.jpg");
@@ -1039,9 +1022,14 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         background-image: url('../images/background-img-t-2x.jpg');
       }
     }
+     /*Modal*/
+     .modal-content{
+        width:60%;
+        height:60%;
+    }
 
      /* What we do*/
-     .feature-h2{
+    .feature-h2{
         display: none;
     }
     .feature-img-style{
@@ -1080,7 +1068,6 @@ input:focus, textarea:focus, input:hover, textarea:hover{
     }
  
      /* Regular Customer*/
-
      .regular-customers-container{
         padding: 60px 2vw;
     }
@@ -1103,11 +1090,26 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         width: 60vw;
      }
 
+     /*Portofolio*/
+     .main-style{
+        padding: 60px 2vw;
+    }
+    .portofolio-buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
 }
 
 /*  Desktop */
 @media screen and (min-width: 1158px){ 
 
+.h1-title{
+        font-size: 44px; 
+        line-height:60px;
+        letter-spacing: 2.62px;
+    }
     /* Header*/
 .header-div-container{
         padding: 0px 10vw;
@@ -1133,6 +1135,12 @@ input:focus, textarea:focus, input:hover, textarea:hover{
   }
 }
 
+  /*Modal*/
+.modal-content{
+    width:40%;
+    height:60%;
+}
+
     /* What we do*/
 .about-us-style{
         display: flex;
@@ -1142,11 +1150,11 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         padding: 94px 10vw;
 }
 .features-style{ 
-        display:flex;
-        flex-direction: row;
-        align-items: stretch;
-        justify-content: stretch;
-        width: 1170px;
+    display:flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    width: 1170px;
 }
 .features-style li .svg-container{
         padding: 25px 100px;
@@ -1205,10 +1213,6 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         height: auto;
 }
     
-
-
-
-
     /* Regular Customer*/
     .regular-customers-container{
         padding: 94px 10px;
@@ -1296,12 +1300,10 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         width: 358px;
         height: 50px;
     }
-    
-
-
-
-
-
+     /*Portofolio*/
+     .main-style{
+        padding: 94px 10vw;
+    }
 
 
 }
