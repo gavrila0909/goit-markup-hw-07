@@ -420,23 +420,7 @@ h2{
        align-items: stretch;
    }
 
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
+/* Background*/
 .title-section-style{
     display: flex; 
     align-items: center;
@@ -453,43 +437,39 @@ h2{
 
 
 
-
-
-
-
-
-
-
-
-
+/* Our team*/
 .our-team-style{
     display: flex; 
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 94px 0px;
+    padding: 60px 3vw;
 }
 .our-team-style h2{
-    margin:0px 0px 50px 0px;
+    margin: 0px;
 }
 .staf-style{ 
     list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0px;
     margin: 0px; 
-    column-gap: 30px;
+    gap: 30px;
+    margin-top: 30px;
 }
-.staf-style img{
-    max-width: 100%;
+.our-team-img img{
+    display: block;
+    width: 450px;
+    height: auto;
 }
 .staf-style li{
     background-color: var(--white-color);
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    column-gap: 30px;
+    justify-content: center;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -500,6 +480,7 @@ h2{
 .employee-svg{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     column-gap: 10px;
     height: 44px;
     transition: color var(--transition), background-color var(--transition), border var(--transition);
@@ -515,7 +496,7 @@ h2{
 }
 
 
-
+   /* Regular customers*/
 .regular-customers-container{
     padding: 60px 3vw;  
 }
@@ -542,7 +523,6 @@ h2{
 }
 
 /* footer */
-
 .footer-style{
     padding: 60px 2vw;
 }
@@ -1090,6 +1070,21 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         justify-content: start;
     }
     
+
+    /* Our team*/
+    .our-team-style {
+        padding: 60px 2vw;
+    }
+    .staf-style {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .our-team-img img{
+        display: block;
+        width: 354px;
+        height: auto;
+    }
  
      /* Regular Customer*/
 
@@ -1118,7 +1113,9 @@ input:focus, textarea:focus, input:hover, textarea:hover{
 }
 
 /*  Desktop */
-@media screen and (min-width: 1158px){  
+@media screen and (min-width: 1158px){ 
+
+    /* Header*/
     .header-div-container{
         padding: 0px 10vw;
     }
@@ -1130,8 +1127,6 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         width: 333px;
         margin:32px 0px;
     }
-
-
 
         /* What we do*/
     .about-us-style{
@@ -1148,7 +1143,6 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         justify-content: stretch;
         width: 1170px;
     }
-
     .features-style li .svg-container{
         padding: 25px 100px;
     }
@@ -1169,8 +1163,13 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         column-gap: 30px;
         position: relative;
     }
+    .what-we-do-img img{
+        display: block;
+        width: 370px;
+        height: auto;
+    }
+
     /* Feature overlay img*/
-    
     .feature-img-overlay{
         position: absolute;
         background-color: rgba(47, 48, 58, 0.80);
@@ -1186,6 +1185,21 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         padding: 27px 0px;
         margin: 0px;
     }
+
+    /* Our team*/
+    .our-team-style {
+        padding: 94px 10vw;
+    }
+    .staf-style {
+        display: flex;
+        flex-direction: row;
+    }
+    .our-team-img img{
+        display: block;
+        width: 270px;
+        height: auto;
+    }
+    
 
 
 
@@ -1211,9 +1225,6 @@ input:focus, textarea:focus, input:hover, textarea:hover{
     .regular-customers-section a{
         padding: 16px 32px;
     }
-    
-    
-
 
     /* Footer section */
     .footer-style{
@@ -1281,7 +1292,6 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         height: 50px;
     }
     
- 
 
 
 
