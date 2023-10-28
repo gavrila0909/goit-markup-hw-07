@@ -13,7 +13,7 @@
 
   /*  Mobile version */
    /* Studio style */
-@media screen and (min-width: 428px){
+@media screen and (min-width: 300px){
 .body-style{
     font-family:var(--main-text-style); 
     font-style: normal; 
