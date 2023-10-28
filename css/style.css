@@ -11,9 +11,9 @@
        --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
+  /*  Mobile version */
    /* Studio style */
-
+@media screen and (min-width: 428px){
 .body-style{
     font-family:var(--main-text-style); 
     font-style: normal; 
@@ -32,10 +32,6 @@
 }
 
 
-.footer-studio-style{
-    color:var(--white-color);
-}
-
 .logo-style, .footer-logo-style { 
     color:var(--header-logo-studio-color); 
     font-family: "Raleway";
@@ -44,9 +40,11 @@
     text-decoration: none;
     line-height: normal;
 }
-
 .web-style {
     color:var(--main-activ-text-color);
+}
+.footer-studio-style{
+    color:var(--white-color);
 }
 
 .link-header-style, .link {
@@ -57,11 +55,9 @@
     line-height: normal; 
     color: var(--main-text-color);
 }
-
  .link:hover,.link:focus{
     color:var(--main-activ-text-color);
 }
-
 .current{
     padding-bottom: 29px;
     color: var(--main-activ-text-color);
@@ -78,12 +74,9 @@
     font-weight: 500;
     letter-spacing: 0.28px;
 }
-
-
 .mail:hover, .phone-number:hover, .mail:focus, .phone-number:focus{
     color:var(--main-activ-text-color);
 }
-
 
 .h1-title{
     color:var(--white-color);
@@ -95,7 +88,6 @@
     line-height:60px;
     margin: 0px;
 }
-
 .main-button{
     background-color:var(--main-activ-text-color); 
     color:var(--white-color); 
@@ -115,15 +107,10 @@
     margin-top: 30px;
     transition: color var(--transition), background-color var(--transition), border var(--transition);
 }
-
 .main-button:hover{ 
     background-color:var(--main-button-activ-color); 
     color:var(--white-color);
 }
-
-
-
-
 .buttons-style{ 
     background-color:var(--button-background-color); 
     color:var(--main-text-color); 
@@ -138,14 +125,10 @@
     padding: 6px 22px;
     min-width: 64px;
 }
-
 .buttons-style:hover, .buttons-style:focus{
     background-color:var(--main-activ-text-color); 
     color: var(--white-color);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10); }
-
-.features-style { 
-    list-style: none;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10); 
 }
 
 h3 {
@@ -171,7 +154,6 @@ h2{
     font-size: 14px;
 }
 
-
 .staf-style h4{
     color:var(--main-text-color);
     line-height: normal;
@@ -181,8 +163,6 @@ h2{
     letter-spacing: 0.48px;
     margin: 0px;
 }
-
-
 .staf-style p{
     color:var(--p-and-header-contact-color);
     text-align: center;
@@ -201,7 +181,6 @@ h2{
     font-family: inherit;
     font-weight: 400;
 }
-
 .footer-contact{
     color:var(--footer-contact-color);
     font-family:inherit;
@@ -212,11 +191,11 @@ h2{
     line-height:1.14;
     transition: color var(--transition);
 }
-
 .footer-contact:hover{
     color:var(--main-activ-text-color);
 }
 
+/*Portofolio style*/
 
 .our-portofolio-style span{
     color:var(--main-text-color);
@@ -235,13 +214,12 @@ h2{
 
 
 /* Studio flex-box */
-/*  Mobile version */
-@media screen and (min-width: 428px){
-    .header-style{
+    /*Header*/
+.header-style{
         display: flex;
         border-bottom: 1px solid #EEE;
-    }
-    .header-div-container{
+}
+.header-div-container{
         display: flex;
         position: relative;
         flex-direction: row;
@@ -249,34 +227,33 @@ h2{
         justify-content: space-between;
         width: 100%;
         padding: 0px 2vw;
-    }
-
-    .header-style .logo-section{
+}
+.header-style .logo-section{
         margin: 16px 0px;
-     }
-    
+ }
     .header-style .nav-section ul {
         display:none;
-    }
-    .header-contacts{
+}
+.header-contacts{
         display:none;
-    } 
-    .header-div-container .nav-menu-button{
+} 
+.header-div-container .nav-menu-button{
         display: flex;
         position: absolute;
         top:10px;
         right: 15px;
-    }  
-    .nav-menu-button svg{
+}  
+.nav-menu-button svg{
         fill: var(--main-text-color);
         width: 40px;
         height: 40px;
         transition: var(--transition);
-    }
-    .nav-menu-button svg:hover, .nav-menu-button svg:focus{
+}
+.nav-menu-button svg:hover, .nav-menu-button svg:focus{
         fill: var(--main-activ-text-color);
-    }
-    /* Mobile-menu*/
+}
+
+     /* Mobile-menu-header*/
     .js-menu-container{
         display: none;
     }
@@ -331,7 +308,6 @@ h2{
     .menu-pages a:hover,.menu-pages a:focus{
         color: var(--main-activ-text-color);
     } 
-
     .menu-contacts{
         display: flex;
         flex-direction: column;
@@ -360,7 +336,6 @@ h2{
         flex-direction: row;
         gap: 10px;
     }
-
     .menu-social-media a{
         color: var(--main-activ-text-color);
         font-family: var(--main-text-style);
@@ -377,50 +352,7 @@ h2{
         border: none;
     }
 
-      /* What we do*/
-    .feature-h2{
-        display: none;
-    }
-    .feature-img-style{
-        display: none;
-    }
-    .about-us-style{
-        padding: 60px 3vw;
-    }
-    .features-style{
-        padding: 0px;
-        margin: 0px;
-        gap: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: stretch;
-    }
-    
-    .features-style li .svg-container{
-        padding: 25px 190px;
-        background-color: #F5F4FA;
-        display: flex;
-        justify-content: center; 
-   }
-   .svg-container svg{
-        width: 70px;
-        height: 70px;
-    }
-   .features-style h3{
-      margin-bottom: 10px;
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-   }
-   .features-style p{
-       margin: 0px;
-       display: flex;
-       justify-content: start;
-       align-items: stretch;
-   }
-
-/* Background*/
+   /* Background*/
 .title-section-style{
     display: flex; 
     align-items: center;
@@ -428,14 +360,65 @@ h2{
     justify-content: center;
     width: 100%;
     padding: 200px 0px;
-    background-image: url("../images/background-img-d-1x.png");
+    background-image: url("../images/background-img-m-1x.jpg");
     background-color: rgba(47, 48, 58, 0.40);
     background-repeat: no-repeat;
     background-size: cover;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .title-section-style{
+    background-image: url('../images/background-img-m-2x.jpg');
+  }
+}
 
 
 
+    /* What we do*/
+.feature-h2{
+        display: none;
+    }
+.feature-img-style{
+        display: none;
+    }
+.about-us-style{
+        padding: 60px 3vw;
+}
+.features-style{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+}
+.features-style li .svg-container{
+        padding: 25px 190px;
+        background-color: #F5F4FA;
+        display: flex;
+        justify-content: center; 
+}
+.svg-container svg{
+        width: 70px;
+        height: 70px;
+}
+.features-style h3{
+      margin-bottom: 10px;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+}
+.features-style p{
+       margin: 0px;
+       display: flex;
+       justify-content: start;
+       align-items: stretch;
+}
+
+  
 
 /* Our team*/
 .our-team-style{
@@ -614,7 +597,6 @@ background-color: #2196F3;
     width: 94vw;
     transition: background-color var(--transition);
 }
-
 .footer-input input[type="email"]::placeholder{
     color: rgba(255, 255, 255, 0.60);
     font-family: var(--main-text-style);
@@ -1046,6 +1028,17 @@ input:focus, textarea:focus, input:hover, textarea:hover{
      .header-div-container .nav-menu-button{
         display: none;
      }
+    /*Background*/
+     .title-section-style{
+        background-image: url("../images/background-img-t-1x.jpg");
+    }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .title-section-style{
+        background-image: url('../images/background-img-t-2x.jpg');
+      }
+    }
 
      /* What we do*/
      .feature-h2{
@@ -1116,43 +1109,55 @@ input:focus, textarea:focus, input:hover, textarea:hover{
 @media screen and (min-width: 1158px){ 
 
     /* Header*/
-    .header-div-container{
+.header-div-container{
         padding: 0px 10vw;
-    }
-    .header-contacts ul{
+}
+.header-contacts ul{
         display: flex; 
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         width: 333px;
         margin:32px 0px;
-    }
+}
 
-        /* What we do*/
-    .about-us-style{
+/*Background*/
+.title-section-style{
+    background-image: url("../images/background-img-d-1x.png");
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .title-section-style{
+    background-image: url('../images/background-img-d-2x.jpg');
+  }
+}
+
+    /* What we do*/
+.about-us-style{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 94px 10vw;
-    }
-    .features-style{ 
+}
+.features-style{ 
         display:flex;
         flex-direction: row;
         align-items: stretch;
         justify-content: stretch;
         width: 1170px;
-    }
-    .features-style li .svg-container{
+}
+.features-style li .svg-container{
         padding: 25px 100px;
-    }
-    .feature-h2{ 
+}
+.feature-h2{ 
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
         margin-top: 94px;
-    }
-    .feature-img-style{
+}
+.feature-img-style{
         list-style: none;
         display:flex;
         flex-direction: row;
@@ -1162,15 +1167,15 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         padding: 0px;
         column-gap: 30px;
         position: relative;
-    }
-    .what-we-do-img img{
+}
+.what-we-do-img img{
         display: block;
         width: 370px;
         height: auto;
-    }
+}
 
     /* Feature overlay img*/
-    .feature-img-overlay{
+.feature-img-overlay{
         position: absolute;
         background-color: rgba(47, 48, 58, 0.80);
         width: 370px;
@@ -1179,26 +1184,26 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    .feature-img-style li .feature-img-overlay h3{
+}
+.feature-img-style li .feature-img-overlay h3{
         color: var(--white-color);
         padding: 27px 0px;
         margin: 0px;
-    }
+}
 
     /* Our team*/
-    .our-team-style {
+.our-team-style {
         padding: 94px 10vw;
-    }
-    .staf-style {
+}
+.staf-style {
         display: flex;
         flex-direction: row;
-    }
-    .our-team-img img{
+}
+.our-team-img img{
         display: block;
         width: 270px;
         height: auto;
-    }
+}
     
 
 
