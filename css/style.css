@@ -19,11 +19,7 @@
     font-style: normal; 
     color:var(--main-text-color);
     margin: 0px;
-    display: flex;
-    flex-direction: column;
     width: 480px;
-    align-items: center;
-    justify-content: center;
 }
 
 .header-div-container, .about-us-style, .main-style, .regular-customers-section{ 
@@ -356,6 +352,7 @@ h2{
     .menu-social-media a:last-child{
         border: none;
     }
+
    /* Background*/
 .title-section-style{
     display: flex; 
@@ -510,6 +507,7 @@ h2{
 /* footer */
 .footer-style{
     padding: 60px 0px;
+    width: 100%;
 }
 .footer-container{
     display: flex;
@@ -707,6 +705,7 @@ background-color: #188CE8;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.6px;
+    margin: 0px 0px 12px;
  }
 .contact-form{
     display: flex;
@@ -968,7 +967,6 @@ input:focus, textarea:focus, input:hover, textarea:hover{
 
     .body-style{
         width: 100%;
-        display: block;
     }
     .header-div-container{
         display: flex;
@@ -1154,7 +1152,7 @@ input:focus, textarea:focus, input:hover, textarea:hover{
 
   /*Modal*/
 .modal-content{
-    width:33%;
+    width:40%;
     height:80%;
 }
 .terms-and-conditions-check {
