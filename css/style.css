@@ -13,12 +13,17 @@
 
   /*  Mobile version */
    /* Studio style */
-@media screen and (min-width: 428px){
+
 .body-style{
     font-family:var(--main-text-style); 
     font-style: normal; 
     color:var(--main-text-color);
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-div-container, .about-us-style, .main-style, .regular-customers-section{ 
@@ -216,8 +221,8 @@ h2{
 /* Studio flex-box */
     /*Header*/
 .header-style{
-        display: flex;
         border-bottom: 1px solid #EEE;
+         width: 100%; 
 }
 .header-div-container{
         display: flex;
@@ -225,8 +230,8 @@ h2{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        padding: 0px 3vw;
         width: 100%;
-        padding: 0px 2vw;
 }
 .header-style .logo-section{
         margin: 16px 0px;
@@ -351,7 +356,6 @@ h2{
     .menu-social-media a:last-child{
         border: none;
     }
-
    /* Background*/
 .title-section-style{
     display: flex; 
@@ -359,7 +363,7 @@ h2{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    padding: 200px 0px;
+    padding: 118px 0px;
     background-image: url("../images/background-img-m-1x.jpg");
     background-color: rgba(47, 48, 58, 0.40);
     background-repeat: no-repeat;
@@ -505,12 +509,13 @@ h2{
 
 /* footer */
 .footer-style{
-    padding: 60px 2vw;
+    padding: 60px 0px;
 }
 .footer-container{
     display: flex;
     flex-direction: column;
     gap: 60px;
+    padding: 0px 3vw;
 }
 .footer-logo-section{
     margin-bottom: 28px;
@@ -957,11 +962,15 @@ input:focus, textarea:focus, input:hover, textarea:hover{
     background: #188CE8;
 }
 
-}
+
 
 /*  Tablet */
 @media screen and (min-width: 768px){
 
+    .body-style{
+        width: 100%;
+        display: block;
+    }
     .header-div-container{
         display: flex;
         flex-direction: row;
@@ -1055,6 +1064,7 @@ input:focus, textarea:focus, input:hover, textarea:hover{
     /* Our team*/
     .our-team-style {
         padding: 60px 2vw;
+        width: 100%;
     }
     .staf-style {
         margin-top: 50px;
@@ -1077,7 +1087,10 @@ input:focus, textarea:focus, input:hover, textarea:hover{
 
      /* footer*/
      .footer-style{
-        padding: 60px 2vw;
+        padding: 60px 0px;
+     }
+     .footer-container{
+        padding: 0px 2vw;
      }
      .footer-section1-2{
         display: flex;
@@ -1099,6 +1112,7 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         flex-direction: row;
         align-items: center;
         justify-content: center;
+    }
 
 }
 
@@ -1126,6 +1140,7 @@ input:focus, textarea:focus, input:hover, textarea:hover{
 /*Background*/
 .title-section-style{
     background-image: url("../images/background-img-d-1x.png");
+    padding: 200px 0px;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -1237,14 +1252,15 @@ input:focus, textarea:focus, input:hover, textarea:hover{
 
     /* Footer section */
     .footer-style{
-      padding: 60px 10vw;  
+      padding: 60px 10vw;
+      width: 100%;  
     }
     .footer-container{
         display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 5vw;
-     
+        padding: 0px
     }
     .footer-logo-section{
         display: flex;
