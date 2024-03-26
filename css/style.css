@@ -226,11 +226,10 @@ h2{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 0px 3vw;
         width: 100%;
 }
 .header-style .logo-section{
-        margin: 16px 0px;
+        margin: 16px 0px 16px 15px;
  }
     .header-style .nav-section ul {
         display:none;
@@ -862,7 +861,7 @@ input:focus, textarea:focus, input:hover, textarea:hover{
 /* Portofolio style and flex-bofx section*/
 
 .main-style{
-    padding: 60px 3vw;
+    padding: 60px 0px;
     width: 100%;
 }
 
@@ -975,10 +974,10 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        padding: 0px 2vw;
+        padding: 0px;
     }
     .header-style .logo-section{
-        margin: 25px 0px;
+        margin: 25px 0px 25px 30px;
      }
      
      .header-contacts ul li:hover{
@@ -999,6 +998,7 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin-right: 30px;
      }
      .header-contacts ul{
         fill: #757575;
@@ -1046,13 +1046,16 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         display: none;
     }
      .about-us-style {
-        padding: 60px 2vw; 
+        padding: 60px 10px; 
     }
     .features-style {
         display: grid;
         grid-template-columns: auto auto;
     }
-    
+    .features-style li{
+        width: 354px;
+        height: 255px;
+    }
     .features-style li .svg-container{
         padding: 25px 142px; 
     }
@@ -1106,7 +1109,7 @@ input:focus, textarea:focus, input:hover, textarea:hover{
 
      /*Portofolio*/
      .main-style{
-        padding: 60px 2vw;
+        padding: 60px 0px;
     }
     .portofolio-buttons{
         display: flex;
@@ -1129,9 +1132,6 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         letter-spacing: 2.62px;
     }
     /* Header*/
-.header-div-container{
-        padding: 0px 10vw;
-}
 .header-contacts ul{
         display: flex; 
         flex-direction: row;
@@ -1139,6 +1139,12 @@ input:focus, textarea:focus, input:hover, textarea:hover{
         justify-content: space-between;
         width: 333px;
         margin:32px 0px;
+}
+.header-style .logo-section {
+    margin-left: 70px;
+}
+.header-contacts {
+    margin-right: 70px;
 }
 
 /*Background*/
@@ -1168,6 +1174,10 @@ input:focus, textarea:focus, input:hover, textarea:hover{
 }
 .terms-and-conditions-label .icon-checkedbox:not(:checked) {
     left: 12px;
+}
+
+.features-style li{
+    width: 270px;
 }
 
     /* What we do*/
@@ -1266,7 +1276,7 @@ input:focus, textarea:focus, input:hover, textarea:hover{
 
     /* Footer section */
     .footer-style{
-      padding: 60px 10vw;
+      padding: 60px 0px;
       width: 100%;  
     }
     .footer-container{
@@ -1332,7 +1342,7 @@ input:focus, textarea:focus, input:hover, textarea:hover{
     }
      /*Portofolio*/
      .main-style{
-        padding: 94px 10vw;
+        padding: 94px 0px;
     }
     .portofolio-picture img{
         width: 370px;
