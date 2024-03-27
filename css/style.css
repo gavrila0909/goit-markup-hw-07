@@ -793,7 +793,10 @@ input:focus, textarea:focus, input:hover, textarea:hover{
     font-style: normal;
     font-weight: 400;
     line-height: 2.4vw;
-    letter-spacing: 0.42px;
+    letter-spacing: 0.42px; 
+    text-decoration: none; 
+}
+.terms-and-conditions-label span a:hover, .terms-and-conditions-label span a:focus{
     text-decoration-line: underline;
 }
 .terms-and-conditions-labe{
@@ -1173,9 +1176,10 @@ input:focus, textarea:focus, input:hover, textarea:hover{
   Width:30px;
   Height:30px;
 }
-.form-row label {
+.form-row label,.terms-and-conditions-label {
     font-size: 12px;
 }
+
 .input-container input,
 .input-container textarea {
     padding: 8px 10px 8px 40px; 
